@@ -21,7 +21,7 @@ bot.command("start", async (ctx) => {
     .row()
     .text("📋 全部内容", "menu_list")
     .row()
-    .text("📦 已购内容", "menu_my")
+    .text("📦 已购内容√", "menu_my")
     .row()
     .text("❓ 帮助", "menu_help");
 
