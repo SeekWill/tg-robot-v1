@@ -6,11 +6,7 @@ const bot = new Bot(BOT_TOKEN);
 
 // ========== 设置底部菜单按钮（命令列表） ==========
 await bot.api.setMyCommands([
-  { command: "start", description: "打开主菜单" },
-  { command: "channels", description: "浏览频道" },
-  { command: "list", description: "全部内容" },
-  { command: "my", description: "已购内容" },
-  { command: "help", description: "帮助" },
+  { command: "start", description: "打开主菜单" }
 ]);
 
 
