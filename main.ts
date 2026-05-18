@@ -24,15 +24,6 @@ bot.command("start", async (ctx) => {
     .text("📦 已购内容", "menu_my")
     .row()
     .text("❓ 帮助", "menu_help");
-  // 创建一个混合风格的内联键盘面板
-	const stylishMenu = new InlineKeyboard()
-    .text("📺 浏览频道", "menu_channels") // 默认样式
-    .row()
-    .text("📋 全部内容", "menu_list")
-    .row()
-    .text("📦 已购内容", "menu_my")
-    .row()
-		.text("❓ 帮助", "menu_help").style("primary") // 蓝色高亮
 
   await ctx.reply("🎛️ 欢迎来到主菜单，请选择功能：", {
     reply_markup: keyboard,
