@@ -8,7 +8,7 @@ const bot = new Bot(BOT_TOKEN);
 await bot.api.setMyCommands([
   { command: "start", description: "打开主菜单" },
   { command: "channels", description: "浏览频道" },
-  { command: "list", description: "全部内容 all" },
+  { command: "list", description: "全部内容" },
   { command: "my", description: "已购内容" },
   { command: "help", description: "帮助" },
 ]);
@@ -18,7 +18,7 @@ bot.command("start", async (ctx) => {
   const keyboard = new InlineKeyboard()
     .text("📺 浏览频道", "menu_channels")
     .row()
-    .text("📋 全部内容 all", "menu_list")
+    .text("📋 全部内容", "menu_list")
     .row()
     .text("📦 已购内容", "menu_my")
     .row()
