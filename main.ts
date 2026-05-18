@@ -17,7 +17,7 @@ await bot.api.setMyCommands([
 // ========== /start 命令：发送内联键盘面板 ==========
 bot.command("start", async (ctx) => {
   const keyboard = new InlineKeyboard()
-    .text("📺 浏览频道", "menu_channels")
+    .text("📺 浏览频道√", "menu_channels")
     .row()
     .text("📋 全部内容", "menu_list")
     .row()
