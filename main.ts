@@ -18,7 +18,7 @@ bot.command("start", async (ctx) => {
   const keyboard = new InlineKeyboard()
     .text("📺 浏览频道", "menu_channels")
     .row()
-    .text("📋 全部内容 all", "menu_list")
+    .text("📋 全部内容 all.", "menu_list")
     .row()
     .text("📦 已购内容", "menu_my")
     .row()
