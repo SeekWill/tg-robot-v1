@@ -16,14 +16,6 @@ await bot.api.setMyCommands([
 
 // ========== /start 命令：发送内联键盘面板 ==========
 bot.command("start", async (ctx) => {
-  const keyboard = new InlineKeyboard()
-    .text("📺 浏览频道", "menu_channels")
-    .row()
-    .text("📋 全部内容", "menu_list")
-    .row()
-    .text("📦 已购内容", "menu_my")
-    .row()
-    .text("❓ 帮助", "menu_help");
   // 创建一个混合风格的内联键盘面板
 	const stylishMenu = new InlineKeyboard()
     .text("📺 浏览频道", "menu_channels") // 默认样式
